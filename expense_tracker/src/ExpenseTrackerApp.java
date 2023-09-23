@@ -4,19 +4,29 @@ import javax.swing.table.DefaultTableModel;
  * The ExpenseTrackerApp class allows users to add/remove daily transactions.
  */
 public class ExpenseTrackerApp {
-
-  public static void main(String[] args) {
-    
-    // Create MVC components
+  //   mock-up code:
+  public DefaultTableModel createComponent(Str[] column_names) {
     DefaultTableModel tableModel = new DefaultTableModel();
-    tableModel.addColumn("Serial");
-    tableModel.addColumn("Amount");
-    tableModel.addColumn("Category");
-    tableModel.addColumn("Date");
-    
 
-    
-    ExpenseTrackerView view = new ExpenseTrackerView(tableModel);
+    for (int i = 0; i < len(column_names); i++) {
+      tableModel.addColumn(column_names[i]);
+    }
+    return tableModel;
+  }
+
+  public static void main(String[] args) { // args is the name of variable? -> should rename to column_names
+
+    // Create MVC components
+//    DefaultTableModel tableModel = new DefaultTableModel();
+
+    // bad for extension or modification? repeat too many times
+//    tableModel.addColumn("Serial");
+//    tableModel.addColumn("Amount");
+//    tableModel.addColumn("Category");
+//    tableModel.addColumn("Date");
+
+    ExpenseTrackerView view = new createComponent(args);
+
 
     // Initialize view
     view.setVisible(true);
