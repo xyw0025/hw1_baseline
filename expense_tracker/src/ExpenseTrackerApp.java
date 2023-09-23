@@ -5,7 +5,7 @@ import javax.swing.table.DefaultTableModel;
  */
 public class ExpenseTrackerApp {
   //   mock-up code:
-  public DefaultTableModel createComponent(Str[] column_names) {
+  private DefaultTableModel createComponent(Str[] column_names) {
     DefaultTableModel tableModel = new DefaultTableModel();
 
     for (int i = 0; i < len(column_names); i++) {
