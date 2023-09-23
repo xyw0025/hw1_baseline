@@ -14,28 +14,12 @@ public class ExpenseTrackerApp {
     return tableModel;
   }
 
-  public static void main(String[] args) { // args is the name of variable? -> should rename to column_names
-
-    // Create MVC components
-//    DefaultTableModel tableModel = new DefaultTableModel();
-
-    // bad for extension or modification? repeat too many times
-//    tableModel.addColumn("Serial");
-//    tableModel.addColumn("Amount");
-//    tableModel.addColumn("Category");
-//    tableModel.addColumn("Date");
-
-    ExpenseTrackerView view = new createComponent(args);
-
-
-    // Initialize view
-    view.setVisible(true);
-
+  private static void addTransactionListener() {
     // Handle add transaction button clicks
     view.getAddTransactionBtn().addActionListener(e -> {
-      
+
       // Get transaction data from view
-      double amount = view.getAmountField(); 
+      double amount = view.getAmountField();
       String category = view.getCategoryField();
 
       // Create transaction object
@@ -44,7 +28,12 @@ public class ExpenseTrackerApp {
       // Call controller to add transaction
       view.addTransaction(t);
     });
-
   }
 
+  public static void main(String[] column_names) { // args is the name of variable? -> should rename to column_names
+    ExpenseTrackerView view = new createComponent(column_names);
+    // Initialize view
+    view.setVisible(true);
+    addTransactionListener();
+  }
 }
