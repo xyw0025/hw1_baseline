@@ -11,7 +11,7 @@ import java.util.List;
  */
 public class ExpenseTrackerView extends JFrame {
 
-  /** variable for the transaction table in the app */
+  /** variable to display tabel values in the app */
   private JTable transactionsTable;
   /** variable to store the Add Transaction action button */
   private JButton addTransactionBtn;
@@ -19,13 +19,14 @@ public class ExpenseTrackerView extends JFrame {
   private JTextField amountField;
   /** variable to store the category field of the transaction (entered by the user) */
   private JTextField categoryField;
-  /** variable to store default table structure (transactionTable will be built on top of this) */
+  /** variable to store table values */
   private DefaultTableModel model;
   /** variable storing all the transactions entered by the user */
   private List<Transaction> transactions = new ArrayList<>();
 
   
-  /** Function to get the Transaction Table */
+  /** Function to get the Transaction Table 
+  */
   public JTable getTransactionsTable() {
     return transactionsTable;
   }
