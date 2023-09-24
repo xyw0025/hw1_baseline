@@ -7,6 +7,7 @@ public class ExpenseTrackerApp {
 
   /**
    * Runs the GUI on the local system
+   * @param args accepts all the input given by the user to the program (not GUI)
    */
   public static void main(String[] args) {
     
