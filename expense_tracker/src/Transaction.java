@@ -17,7 +17,6 @@ public class Transaction {
   /** Initializes the class variables to the value passed to the constructor  
    * @param amount consists of the default value for class variable amount
    * @param category is the default value for class variable category
-   * @return there is no return type for constructor (not even void)
   */
   public Transaction(double amount, String category) {
     this.amount = amount;
@@ -35,7 +34,6 @@ public class Transaction {
 
   /** Function to set a value to the amount variable
    * @param amount the value to be assigned to class variable amount
-   * @return Nothing is returned
     */
   public void setAmount(double amount) {
     this.amount = amount;
@@ -50,7 +48,6 @@ public class Transaction {
 
   /** function to assign/set a value to the category variable  
    * @param category contains the value to be assigned to the category variable
-   * @return Nothing is returned
   */
   public void setCategory(String category) {
     this.category = category; 
