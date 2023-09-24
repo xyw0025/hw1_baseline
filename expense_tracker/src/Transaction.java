@@ -14,7 +14,11 @@ public class Transaction {
   /** variable to store the timestamp (time and date) of the new transaction  */
   private String timestamp;
 
-  /** Initializes the class variables to the value passed to the constructor  */
+  /** Initializes the class variables to the value passed to the constructor  
+   * @param amount consists of the default value for class variable amount
+   * @param category is the default value for class variable category
+   * @return there is no return type for constructor (not even void)
+  */
   public Transaction(double amount, String category) {
     this.amount = amount;
     this.category = category;
