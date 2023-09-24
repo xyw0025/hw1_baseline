@@ -133,7 +133,9 @@ public class ExpenseTrackerView extends JFrame {
     refresh();
   }
   
-
+  public void alertInvalidInput(String err) {
+    JOptionPane.showMessageDialog(transactionsTable, err);
+  }
 
   // Other view methods
 }
