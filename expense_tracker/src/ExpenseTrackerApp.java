@@ -5,7 +5,7 @@ import javax.swing.table.DefaultTableModel;
  */
 public class ExpenseTrackerApp {
 
-  /*
+  /**
    * Runs the GUI on the local system
    */
   public static void main(String[] args) {
