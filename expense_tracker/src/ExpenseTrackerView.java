@@ -66,6 +66,9 @@ public class ExpenseTrackerView extends JFrame {
     return model;
   }
 
+  /*
+   * Constructor method. Used to set default values for the several UI components in the application.
+   */
   public ExpenseTrackerView(DefaultTableModel model) {
     setTitle("Expense Tracker"); // Set title
     setSize(600, 400); // Make GUI larger
