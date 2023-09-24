@@ -7,9 +7,11 @@ import java.util.Date;
 import java.util.List;
 
 public class Transaction {
-
+  // variable to store the amount present in the transaction
   private double amount;
+  // variable to store type of transaction. Example - food, entertainment, etc.
   private String category;
+  // variable to store the timestamp (time and date) of the new transaction
   private String timestamp;
 
   public Transaction(double amount, String category) {
