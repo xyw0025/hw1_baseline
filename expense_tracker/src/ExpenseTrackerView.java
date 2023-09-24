@@ -26,12 +26,15 @@ public class ExpenseTrackerView extends JFrame {
 
   
   /** Function to get the Transaction Table 
+   * @return returns the table to be displayed
   */
   public JTable getTransactionsTable() {
     return transactionsTable;
   }
 
-  /** Function to get the value entered in the TextField for amount by the user. Returns 0 if empty. */
+  /** Function to get the value entered in the TextField for amount by the user. 
+   * @return Amount inserted in the text field corresponding to the amountField variable (if empty returns 0).
+   */
   public double getAmountField() {
     if(amountField.getText().isEmpty()) {
       return 0;
@@ -41,33 +44,47 @@ public class ExpenseTrackerView extends JFrame {
     }
   }
 
-  /** Function to set the value of variable amountField (Nothing is returned) */
+  /** Function to set the value of variable amountField (Nothing is returned) 
+   * @param amountField assigns a value to the class variable amountField
+   * @return Nothing is returned
+  */
   public void setAmountField(JTextField amountField) {
     this.amountField = amountField;
   }
 
-  /** Function to get the value entered in the TextField for category by the user. */
+  /** Function to get the value entered in the TextField for category by the user. 
+   * @return value entered in the category field by the user in GUI
+  */
   public String getCategoryField() {
     return categoryField.getText();
   }
 
-  /** Function to set the value of variable categoryField. (Nothing is returned) */
+  /** Function to set the value of variable categoryField.
+   * @param categoryField contains value to be assigned to the class variable categoryField 
+   * @return Nothing is returned
+  */
   public void setCategoryField(JTextField categoryField) {
     this.categoryField = categoryField;
   }
 
-  /** Function returns the 'Add transaction button' as a variable */
+  /** Function returns the 'Add transaction button' as a variable 
+   * @return Returns the add transaction button 
+  */
   public JButton getAddTransactionBtn() {
     return addTransactionBtn;
   }
 
-  /** Returns the default table model */
+  /** Returns the default table model 
+   * @return returns the table model (consists of values to be displayed)
+  */
   public DefaultTableModel getTableModel() {
     return model;
   }
 
   /**
    * Constructor method. Used to set default values for the several UI components in the application.
+   * @param model Used to initialize the structure of the view table model
+   * @return Nothing is return
    */
   public ExpenseTrackerView(DefaultTableModel model) {
     setTitle("Expense Tracker"); // Set title
@@ -107,7 +124,10 @@ public class ExpenseTrackerView extends JFrame {
   
   }
 
-  /** Builds the custom table from start, i.e., from the first transaction, and calculates the new total */
+  /** Builds the custom table from start, i.e., from the first transaction, and calculates the new total 
+   * @param transactions consists of a list of transactions made by the user in GUI
+   * @return Nothing is retuned
+  */
   public void refreshTable(List<Transaction> transactions) {
       // model.setRowCount(0);
       model.setRowCount(0);
@@ -130,7 +150,9 @@ public class ExpenseTrackerView extends JFrame {
   
     }  
 
-  /** Collects the updated list of transactions and calls refreshTable function */
+  /** Collects the updated list of transactions and calls refreshTable function 
+   * @return Nothing is returned
+  */
   public void refresh() {
 
     // Get transactions from model 
@@ -141,12 +163,17 @@ public class ExpenseTrackerView extends JFrame {
   
   }
 
-  /** Method to return the list of transactions */
+  /** Method to return the list of transactions 
+   * @return List of transactions made by the user 
+  */
   public List<Transaction> getTransactions() {
     return transactions;
   }
   
-  /** Adds the new transaction to the list of transactions. Updates the default table model with the latest transaction. */ 
+  /** Adds the new transaction to the list of transactions. Updates the default table model with the latest transaction. 
+   * @param t the latest transaction added by the user in GUI
+   * @return Nothing is returned
+   */ 
   public void addTransaction(Transaction t) {
     transactions.add(t);
     getTableModel().addRow(new Object[]{t.getAmount(), t.getCategory(), t.getTimestamp()});
