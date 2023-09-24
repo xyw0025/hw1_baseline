@@ -25,32 +25,47 @@ public class Transaction {
     this.timestamp = generateTimestamp();
   }
 
-  /** Function to access value of the amount variable  */
+  /** 
+   * Function to access value of the amount variable
+   * @return  value of amount class variable is returned 
+   */
   public double getAmount() {
     return amount;
   }
 
-  /** Function to set a value to the amount variable  */
+  /** Function to set a value to the amount variable
+   * @param amount the value to be assigned to class variable amount
+   * @return Nothing is returned
+    */
   public void setAmount(double amount) {
     this.amount = amount;
   }
 
-  /** Function to access the value of category variable  */
+  /** Function to access the value of category variable  
+   * @return the current value of category is returned
+  */
   public String getCategory() {
     return category;
   }
 
-  /** function to assign/set a value to the category variable  */
+  /** function to assign/set a value to the category variable  
+   * @param category contains the value to be assigned to the category variable
+   * @return Nothing is returned
+  */
   public void setCategory(String category) {
     this.category = category; 
   }
   
-  /** function to return the timestamp value  */
+  /** function to return the timestamp value  
+   * @return returns the current timestamp
+  */
   public String getTimestamp() {
     return timestamp;
   }
 
-  /** Generates and returns the current timestamp in the pattern "dd-MM-yyyy HH:mm"  */
+  /** Generates and returns the current timestamp in the pattern "dd-MM-yyyy HH:mm"  
+   * @return Returns the timestamp in a formatted pattern
+  */
   private String generateTimestamp() {
     // Formatter to load the timestamp according to a specific pattern
     SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy HH:mm");  
