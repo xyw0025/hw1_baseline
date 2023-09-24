@@ -26,11 +26,12 @@ public class ExpenseTrackerView extends JFrame {
   private List<Transaction> transactions = new ArrayList<>();
 
   
-
+  // Function to get the Transaction Table 
   public JTable getTransactionsTable() {
     return transactionsTable;
   }
 
+  // Function to get the value entered in the TextField for amount by the user. Returns 0 if empty.
   public double getAmountField() {
     if(amountField.getText().isEmpty()) {
       return 0;
@@ -40,21 +41,27 @@ public class ExpenseTrackerView extends JFrame {
     }
   }
 
+  // Function to set the value of variable amountField (Nothing is returned)
   public void setAmountField(JTextField amountField) {
     this.amountField = amountField;
   }
 
+  // Function to get the value entered in the TextField for category by the user.
   public String getCategoryField() {
     return categoryField.getText();
   }
 
+  // Function to set the value of variable categoryField. (Nothing is returned)
   public void setCategoryField(JTextField categoryField) {
     this.categoryField = categoryField;
   }
 
+  // Function returns the 'Add transaction button' as a variable
   public JButton getAddTransactionBtn() {
     return addTransactionBtn;
   }
+
+  // Returns the default table model 
   public DefaultTableModel getTableModel() {
     return model;
   }
