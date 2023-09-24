@@ -20,7 +20,7 @@ public class ExpenseTrackerView extends JFrame {
   private JTextField amountField;
   // variable to store the category field of the transaction (entered by the user)
   private JTextField categoryField;
-  // a default Table loaded - our transaction table will be built on top of this
+  // variable to store default table structure (transactionTable will be built on top of this)
   private DefaultTableModel model;
   // variable storing all the transactions entered by the user
   private List<Transaction> transactions = new ArrayList<>();
@@ -107,6 +107,7 @@ public class ExpenseTrackerView extends JFrame {
   
   }
 
+  // Builds the custom table from start, i.e., from the first transaction, and calculates the new total
   public void refreshTable(List<Transaction> transactions) {
       // model.setRowCount(0);
       model.setRowCount(0);
@@ -129,6 +130,7 @@ public class ExpenseTrackerView extends JFrame {
   
     }  
 
+  // Collects the updated list of transactions and calls refreshTable function 
   public void refresh() {
 
     // Get transactions from model
@@ -139,10 +141,12 @@ public class ExpenseTrackerView extends JFrame {
   
   }
 
+  // Method to return the list of transactions
   public List<Transaction> getTransactions() {
     return transactions;
   }
   
+  // Adds the new transaction to the list of transactions. Updates the default table model with the latest transaction. 
   public void addTransaction(Transaction t) {
     transactions.add(t);
     getTableModel().addRow(new Object[]{t.getAmount(), t.getCategory(), t.getTimestamp()});
