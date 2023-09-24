@@ -46,7 +46,6 @@ public class ExpenseTrackerView extends JFrame {
 
   /** Function to set the value of variable amountField (Nothing is returned) 
    * @param amountField assigns a value to the class variable amountField
-   * @return Nothing is returned
   */
   public void setAmountField(JTextField amountField) {
     this.amountField = amountField;
@@ -61,7 +60,6 @@ public class ExpenseTrackerView extends JFrame {
 
   /** Function to set the value of variable categoryField.
    * @param categoryField contains value to be assigned to the class variable categoryField 
-   * @return Nothing is returned
   */
   public void setCategoryField(JTextField categoryField) {
     this.categoryField = categoryField;
@@ -84,7 +82,6 @@ public class ExpenseTrackerView extends JFrame {
   /**
    * Constructor method. Used to set default values for the several UI components in the application.
    * @param model Used to initialize the structure of the view table model
-   * @return Nothing is return
    */
   public ExpenseTrackerView(DefaultTableModel model) {
     setTitle("Expense Tracker"); // Set title
@@ -126,7 +123,6 @@ public class ExpenseTrackerView extends JFrame {
 
   /** Builds the custom table from start, i.e., from the first transaction, and calculates the new total 
    * @param transactions consists of a list of transactions made by the user in GUI
-   * @return Nothing is retuned
   */
   public void refreshTable(List<Transaction> transactions) {
       // model.setRowCount(0);
@@ -151,7 +147,6 @@ public class ExpenseTrackerView extends JFrame {
     }  
 
   /** Collects the updated list of transactions and calls refreshTable function 
-   * @return Nothing is returned
   */
   public void refresh() {
 
@@ -172,7 +167,6 @@ public class ExpenseTrackerView extends JFrame {
   
   /** Adds the new transaction to the list of transactions. Updates the default table model with the latest transaction. 
    * @param t the latest transaction added by the user in GUI
-   * @return Nothing is returned
    */ 
   public void addTransaction(Transaction t) {
     transactions.add(t);
