@@ -1,4 +1,7 @@
-
+/*
+ * ExpenseTrackerView class is responsible for updating the view when user adds a transaction.
+ * 
+ */
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
