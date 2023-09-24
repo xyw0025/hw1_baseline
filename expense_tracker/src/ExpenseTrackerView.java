@@ -1,7 +1,3 @@
-/*
- * ExpenseTrackerView class is responsible for updating the view when user adds a transaction.
- * 
- */
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
@@ -10,28 +6,31 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.List; 
 
+/**
+ * ExpenseTrackerView class is responsible for updating the view when user adds a transaction.
+ */
 public class ExpenseTrackerView extends JFrame {
 
-  // variable for the transaction table in the app 
+  /** variable for the transaction table in the app */
   private JTable transactionsTable;
-  // variable to store the Add Transaction action button
+  /** variable to store the Add Transaction action button */
   private JButton addTransactionBtn;
-  // variable to store the amount field of the transaction (entered by the user)
+  /** variable to store the amount field of the transaction (entered by the user) */
   private JTextField amountField;
-  // variable to store the category field of the transaction (entered by the user)
+  /** variable to store the category field of the transaction (entered by the user) */
   private JTextField categoryField;
-  // variable to store default table structure (transactionTable will be built on top of this)
+  /** variable to store default table structure (transactionTable will be built on top of this) */
   private DefaultTableModel model;
-  // variable storing all the transactions entered by the user
+  /** variable storing all the transactions entered by the user */
   private List<Transaction> transactions = new ArrayList<>();
 
   
-  // Function to get the Transaction Table 
+  /** Function to get the Transaction Table */
   public JTable getTransactionsTable() {
     return transactionsTable;
   }
 
-  // Function to get the value entered in the TextField for amount by the user. Returns 0 if empty.
+  /** Function to get the value entered in the TextField for amount by the user. Returns 0 if empty. */
   public double getAmountField() {
     if(amountField.getText().isEmpty()) {
       return 0;
@@ -41,32 +40,32 @@ public class ExpenseTrackerView extends JFrame {
     }
   }
 
-  // Function to set the value of variable amountField (Nothing is returned)
+  /** Function to set the value of variable amountField (Nothing is returned) */
   public void setAmountField(JTextField amountField) {
     this.amountField = amountField;
   }
 
-  // Function to get the value entered in the TextField for category by the user.
+  /** Function to get the value entered in the TextField for category by the user. */
   public String getCategoryField() {
     return categoryField.getText();
   }
 
-  // Function to set the value of variable categoryField. (Nothing is returned)
+  /** Function to set the value of variable categoryField. (Nothing is returned) */
   public void setCategoryField(JTextField categoryField) {
     this.categoryField = categoryField;
   }
 
-  // Function returns the 'Add transaction button' as a variable
+  /** Function returns the 'Add transaction button' as a variable */
   public JButton getAddTransactionBtn() {
     return addTransactionBtn;
   }
 
-  // Returns the default table model 
+  /** Returns the default table model */
   public DefaultTableModel getTableModel() {
     return model;
   }
 
-  /*
+  /**
    * Constructor method. Used to set default values for the several UI components in the application.
    */
   public ExpenseTrackerView(DefaultTableModel model) {
@@ -76,7 +75,7 @@ public class ExpenseTrackerView extends JFrame {
 
     addTransactionBtn = new JButton("Add Transaction");
 
-    // Create UI components
+    // Create UI components 
     JLabel amountLabel = new JLabel("Amount:");
     amountField = new JTextField(10);
     
@@ -107,7 +106,7 @@ public class ExpenseTrackerView extends JFrame {
   
   }
 
-  // Builds the custom table from start, i.e., from the first transaction, and calculates the new total
+  /** Builds the custom table from start, i.e., from the first transaction, and calculates the new total */
   public void refreshTable(List<Transaction> transactions) {
       // model.setRowCount(0);
       model.setRowCount(0);
@@ -130,10 +129,10 @@ public class ExpenseTrackerView extends JFrame {
   
     }  
 
-  // Collects the updated list of transactions and calls refreshTable function 
+  /** Collects the updated list of transactions and calls refreshTable function */
   public void refresh() {
 
-    // Get transactions from model
+    // Get transactions from model 
     List<Transaction> transactions = getTransactions();
   
     // Pass to view
@@ -141,12 +140,12 @@ public class ExpenseTrackerView extends JFrame {
   
   }
 
-  // Method to return the list of transactions
+  /** Method to return the list of transactions */
   public List<Transaction> getTransactions() {
     return transactions;
   }
   
-  // Adds the new transaction to the list of transactions. Updates the default table model with the latest transaction. 
+  /** Adds the new transaction to the list of transactions. Updates the default table model with the latest transaction. */ 
   public void addTransaction(Transaction t) {
     transactions.add(t);
     getTableModel().addRow(new Object[]{t.getAmount(), t.getCategory(), t.getTimestamp()});
