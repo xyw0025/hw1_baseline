@@ -1,4 +1,6 @@
-
+/*
+ * Transaction class provides a basic structure to a transaction made by the user
+ */
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
