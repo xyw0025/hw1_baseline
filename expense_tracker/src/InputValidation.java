@@ -22,7 +22,7 @@ public class InputValidation {
         }
     }
     /**
-     * Function to calidate category value on GUI
+     * Function to validate category value on GUI
      * @param category value inserted by the user in category field on GUI
      */
     private static void checkCategory(String category) {
