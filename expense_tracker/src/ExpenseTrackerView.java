@@ -177,6 +177,10 @@ public class ExpenseTrackerView extends JFrame {
     refresh();
   }
   
+  /**
+   * Function to pop up an Error dialogue if inputs are violating the requirements
+   * @param err Error message to show 
+   */
   public void alertInvalidInput(String err) {
     JOptionPane.showMessageDialog(transactionsTable, err);
   }
