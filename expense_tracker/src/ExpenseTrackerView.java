@@ -32,7 +32,7 @@ public class ExpenseTrackerView extends JFrame {
     return transactionsTable;
   }
 
-  /** Function to get the value entered in the TextField for amount by the user. 
+  /** Function to get the value entered in the TextField for amount by the user. Will raise an exception if invalid dataytpe is inserted
    * @return Amount inserted in the text field corresponding to the amountField variable (if empty returns 0).
    */
   public double getAmountField() {
@@ -54,7 +54,7 @@ public class ExpenseTrackerView extends JFrame {
     this.amountField = amountField;
   }
 
-  /** Function to get the value entered in the TextField for category by the user. 
+  /** Function to get the value entered in the TextField for category by the user (in lowercase). 
    * @return value entered in the category field by the user in GUI
   */
   public String getCategoryField() {
