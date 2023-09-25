@@ -28,11 +28,17 @@ public class ExpenseTrackerApp {
       double amount = view.getAmountField(); 
       String category = view.getCategoryField();
 
-      // Create transaction object
-      Transaction t = new Transaction(amount, category);
+      try {
+        InputValidation.check(amount, category);
+        // Create transaction object
+        Transaction t = new Transaction(amount, category);
 
-      // Call controller to add transaction
-      view.addTransaction(t);
+        // Call controller to add transaction
+        view.addTransaction(t);
+
+      } catch (IllegalArgumentException err) {
+        view.alertInvalidInput(err.toString());
+      }
     });
 
   }
