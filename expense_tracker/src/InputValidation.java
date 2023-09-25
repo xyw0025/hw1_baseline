@@ -13,6 +13,9 @@ public class InputValidation {
      */
     static String[] categories = {"food", "bills", "travel", "entertainment", "other"};
 
+    /** Function to validate amount field on the GUI
+     * @param amount value inserted by the user on GUI in amount field
+     */
     private static void checkAmount(double amount) {
         if (amount <= 0 || amount >= 1000) {
             throw new IllegalArgumentException("Invalid input - amount");
