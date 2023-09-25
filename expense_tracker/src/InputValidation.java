@@ -31,6 +31,12 @@ public class InputValidation {
            throw new IllegalArgumentException("Invalid input - category");
        }
     }
+
+    /**
+     * Function to receive values from amount and category field of GUI and validate them
+     * @param amount user's amount value on GUI
+     * @param category_name user's category value on GUI
+     */
     public static void check(double amount, String category_name) {
         checkAmount(amount);
         checkCategory(category_name);
