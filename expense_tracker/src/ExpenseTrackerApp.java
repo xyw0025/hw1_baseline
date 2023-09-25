@@ -5,6 +5,10 @@ import javax.swing.table.DefaultTableModel;
  */
 public class ExpenseTrackerApp {
 
+  /**
+   * Runs the GUI on the local system
+   * @param args accepts all the input given by the user to the program (not GUI)
+   */
   public static void main(String[] args) {
     
     // Create MVC components
@@ -29,6 +33,7 @@ public class ExpenseTrackerApp {
       String category = view.getCategoryField();
 
       try {
+        // Validating the input values
         InputValidation.check(amount, category);
         // Create transaction object
         Transaction t = new Transaction(amount, category);
