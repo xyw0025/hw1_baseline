@@ -1,11 +1,16 @@
 import java.util.Arrays;
-
+/**
+ * Class to validate the inputs entered by the user in amount and category field
+ */
 public class InputValidation {
     // Requirements according to HW1.pdf:
     // The amount should be greater than 0 and less than 1000
     // The amount should be a valid number
     // The category should be a valid string input from list: ”food”, ”travel”, ”bills”, ”entertainment”, and ”other”
 
+    /**
+     * List containing all possible values for category field
+     */
     static String[] categories = {"food", "bills", "travel", "entertainment", "other"};
 
     private static void checkAmount(double amount) {
