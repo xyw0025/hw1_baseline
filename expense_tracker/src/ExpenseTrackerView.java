@@ -39,7 +39,7 @@ public class ExpenseTrackerView extends JFrame {
   }
 
   public String getCategoryField() {
-    return categoryField.getText();
+    return categoryField.getText().toLowerCase();
   }
 
   public void setCategoryField(JTextField categoryField) {
