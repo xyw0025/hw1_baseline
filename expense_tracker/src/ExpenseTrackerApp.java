@@ -33,6 +33,7 @@ public class ExpenseTrackerApp {
       String category = view.getCategoryField();
 
       try {
+        // Validating the input values
         InputValidation.check(amount, category);
         // Create transaction object
         Transaction t = new Transaction(amount, category);
