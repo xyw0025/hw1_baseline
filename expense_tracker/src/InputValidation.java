@@ -21,6 +21,10 @@ public class InputValidation {
             throw new IllegalArgumentException("Invalid input - amount");
         }
     }
+    /**
+     * Function to calidate category value on GUI
+     * @param category value inserted by the user in category field on GUI
+     */
     private static void checkCategory(String category) {
         // raise error if the category name is not in the array
        if (!Arrays.asList(categories).contains(category)) {
