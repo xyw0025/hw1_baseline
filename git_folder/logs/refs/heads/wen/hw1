@@ -1,5 +1,0 @@
-0000000000000000000000000000000000000000 4aba3f306ce156c0a3995c72fae604e5c4dd4839 wen <xyw0025@gmail.com> 1695491053 -0400	branch: Created from HEAD
-4aba3f306ce156c0a3995c72fae604e5c4dd4839 217869c938cc61bb88864bd38319f286e7c9c0d5 wen <xyw0025@gmail.com> 1695491206 -0400	commit: Refactor: extract creating component from main
-217869c938cc61bb88864bd38319f286e7c9c0d5 8458dbdbc28cbc504f03943f0031ef5ca5986e89 wen <xyw0025@gmail.com> 1695491885 -0400	commit: Refactor: meaningful argument name
-8458dbdbc28cbc504f03943f0031ef5ca5986e89 2527e7eb17ffb6649dcdcb439bd58de822dfa986 wen <xyw0025@gmail.com> 1695491895 -0400	commit (amend): Refactor: naming should be meaningful
-2527e7eb17ffb6649dcdcb439bd58de822dfa986 6003cbf8f1388aeb6ae10fc132a7c845d31c07f5 wen <xyw0025@gmail.com> 1695491952 -0400	commit: Refactor: more extracting
