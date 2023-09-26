@@ -1,0 +1,28 @@
+0000000000000000000000000000000000000000 4aba3f306ce156c0a3995c72fae604e5c4dd4839 wen <xyw0025@gmail.com> 1695490944 -0400	clone: from https://github.com/xyw0025/hw1_baseline
+4aba3f306ce156c0a3995c72fae604e5c4dd4839 4aba3f306ce156c0a3995c72fae604e5c4dd4839 wen <xyw0025@gmail.com> 1695491053 -0400	checkout: moving from main to wen/hw1
+4aba3f306ce156c0a3995c72fae604e5c4dd4839 217869c938cc61bb88864bd38319f286e7c9c0d5 wen <xyw0025@gmail.com> 1695491206 -0400	commit: Refactor: extract creating component from main
+217869c938cc61bb88864bd38319f286e7c9c0d5 8458dbdbc28cbc504f03943f0031ef5ca5986e89 wen <xyw0025@gmail.com> 1695491885 -0400	commit: Refactor: meaningful argument name
+8458dbdbc28cbc504f03943f0031ef5ca5986e89 2527e7eb17ffb6649dcdcb439bd58de822dfa986 wen <xyw0025@gmail.com> 1695491895 -0400	commit (amend): Refactor: naming should be meaningful
+2527e7eb17ffb6649dcdcb439bd58de822dfa986 6003cbf8f1388aeb6ae10fc132a7c845d31c07f5 wen <xyw0025@gmail.com> 1695491952 -0400	commit: Refactor: more extracting
+6003cbf8f1388aeb6ae10fc132a7c845d31c07f5 4aba3f306ce156c0a3995c72fae604e5c4dd4839 wen <xyw0025@gmail.com> 1695502669 -0400	checkout: moving from wen/hw1 to main
+4aba3f306ce156c0a3995c72fae604e5c4dd4839 4aba3f306ce156c0a3995c72fae604e5c4dd4839 wen <xyw0025@gmail.com> 1695507752 -0400	checkout: moving from main to wen/code_modification
+4aba3f306ce156c0a3995c72fae604e5c4dd4839 2751e9a1b93fb230799c6080f6bab22a3392742a wen <xyw0025@gmail.com> 1695519016 -0400	commit: Feat: Validate amount and category's value in controller
+2751e9a1b93fb230799c6080f6bab22a3392742a fffc4c2e287d7b702324e8d4173c211d642d9da6 wen <xyw0025@gmail.com> 1695519165 -0400	commit: Feat: amount field logic. If it's not a double than value gets switched to 0.
+fffc4c2e287d7b702324e8d4173c211d642d9da6 49c4206f4aa21dfb59ae208cdcbc13062f631fb1 wen <xyw0025@gmail.com> 1695519188 -0400	commit: Feat: invalid input alert using OptionPane
+49c4206f4aa21dfb59ae208cdcbc13062f631fb1 788aaa9a59af9afdb447e16c644e7cd53038df8f wen <xyw0025@gmail.com> 1695519298 -0400	commit: Feat: Input validation logics
+788aaa9a59af9afdb447e16c644e7cd53038df8f acb6487934235bd64c1955f5c7198ceda700e4f4 wen <xyw0025@gmail.com> 1695519602 -0400	commit: Chore: comment location and code style
+acb6487934235bd64c1955f5c7198ceda700e4f4 acb6487934235bd64c1955f5c7198ceda700e4f4 wen <xyw0025@gmail.com> 1695573162 -0400	checkout: moving from wen/code_modification to wen/test
+acb6487934235bd64c1955f5c7198ceda700e4f4 acb6487934235bd64c1955f5c7198ceda700e4f4 wen <xyw0025@gmail.com> 1695573169 -0400	checkout: moving from wen/test to wen/code_modification
+acb6487934235bd64c1955f5c7198ceda700e4f4 551f80953f027bded1dcf2c708b31685ded5f587 wen <xyw0025@gmail.com> 1695608373 -0400	commit: Feat: input category name case non-sensitive
+551f80953f027bded1dcf2c708b31685ded5f587 4aba3f306ce156c0a3995c72fae604e5c4dd4839 wen <xyw0025@gmail.com> 1695652524 -0400	checkout: moving from wen/code_modification to main
+4aba3f306ce156c0a3995c72fae604e5c4dd4839 acb6487934235bd64c1955f5c7198ceda700e4f4 wen <xyw0025@gmail.com> 1695652535 -0400	checkout: moving from main to wen/test
+acb6487934235bd64c1955f5c7198ceda700e4f4 551f80953f027bded1dcf2c708b31685ded5f587 wen <xyw0025@gmail.com> 1695652544 -0400	pull . wen/code_modification: Fast-forward
+551f80953f027bded1dcf2c708b31685ded5f587 dc607584b1e03386f415d29c3a6ec5ceb2497e8c wen <xyw0025@gmail.com> 1695652823 -0400	pull origin main: Merge made by the 'recursive' strategy.
+dc607584b1e03386f415d29c3a6ec5ceb2497e8c 32a98d5b3d19b657439f3d20c2e9ac01434f7d93 wen <xyw0025@gmail.com> 1695653450 -0400	checkout: moving from wen/test to ansh-hw1
+32a98d5b3d19b657439f3d20c2e9ac01434f7d93 7acdcbdb7992d0ff791d8bd86121238e2aa5a6f8 wen <xyw0025@gmail.com> 1695653454 -0400	pull origin main: Merge made by the 'recursive' strategy.
+7acdcbdb7992d0ff791d8bd86121238e2aa5a6f8 32a98d5b3d19b657439f3d20c2e9ac01434f7d93 wen <xyw0025@gmail.com> 1695653500 -0400	reset: moving to HEAD^
+32a98d5b3d19b657439f3d20c2e9ac01434f7d93 09d3d1638140fd43a88ba4680e507438215b0488 wen <xyw0025@gmail.com> 1695658666 -0400	pull origin ansh-hw1: Fast-forward
+09d3d1638140fd43a88ba4680e507438215b0488 4aba3f306ce156c0a3995c72fae604e5c4dd4839 wen <xyw0025@gmail.com> 1695668972 -0400	checkout: moving from ansh-hw1 to main
+4aba3f306ce156c0a3995c72fae604e5c4dd4839 4d00906e5317234e4ea22476c2cd3beb47265c52 wen <xyw0025@gmail.com> 1695668977 -0400	pull origin main: Fast-forward
+4d00906e5317234e4ea22476c2cd3beb47265c52 4d00906e5317234e4ea22476c2cd3beb47265c52 wen <xyw0025@gmail.com> 1695743158 -0400	checkout: moving from main to wen/adding_hw_pdf
+4d00906e5317234e4ea22476c2cd3beb47265c52 c45e208b694551134fc8bb6077c1d627ab21e975 wen <xyw0025@gmail.com> 1695743185 -0400	commit: Feat: add answer pdf file

@@ -1,0 +1,7 @@
+0000000000000000000000000000000000000000 4aba3f306ce156c0a3995c72fae604e5c4dd4839 wen <xyw0025@gmail.com> 1695507752 -0400	branch: Created from HEAD
+4aba3f306ce156c0a3995c72fae604e5c4dd4839 2751e9a1b93fb230799c6080f6bab22a3392742a wen <xyw0025@gmail.com> 1695519016 -0400	commit: Feat: Validate amount and category's value in controller
+2751e9a1b93fb230799c6080f6bab22a3392742a fffc4c2e287d7b702324e8d4173c211d642d9da6 wen <xyw0025@gmail.com> 1695519165 -0400	commit: Feat: amount field logic. If it's not a double than value gets switched to 0.
+fffc4c2e287d7b702324e8d4173c211d642d9da6 49c4206f4aa21dfb59ae208cdcbc13062f631fb1 wen <xyw0025@gmail.com> 1695519188 -0400	commit: Feat: invalid input alert using OptionPane
+49c4206f4aa21dfb59ae208cdcbc13062f631fb1 788aaa9a59af9afdb447e16c644e7cd53038df8f wen <xyw0025@gmail.com> 1695519298 -0400	commit: Feat: Input validation logics
+788aaa9a59af9afdb447e16c644e7cd53038df8f acb6487934235bd64c1955f5c7198ceda700e4f4 wen <xyw0025@gmail.com> 1695519602 -0400	commit: Chore: comment location and code style
+acb6487934235bd64c1955f5c7198ceda700e4f4 551f80953f027bded1dcf2c708b31685ded5f587 wen <xyw0025@gmail.com> 1695608373 -0400	commit: Feat: input category name case non-sensitive
