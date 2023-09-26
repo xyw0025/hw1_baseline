@@ -1,0 +1,124 @@
+commit 4d00906e5317234e4ea22476c2cd3beb47265c52
+Author: Anshumaan Chauhan <98472023+Anshumaan-Chauhan02@users.noreply.github.com>
+Date:   Mon Sep 25 12:30:54 2023 -0400
+
+    Documented files for Understandability  (#2)
+    
+    * added description of the ExpenseTrackerView class
+    
+    * added description of the transaction class
+    
+    * description of class variables added for ExpenseTrackerView
+    
+    * description of class methods added for ExpenseTrackerView
+    
+    * Appended Constructor description for class ExpenseTrackerView
+    
+    * Added the description for refreshTable, refresh and addTransaction in ExpenseTrackerView
+    
+    * Description for main method in ExpenseTrackerApp
+    
+    * Class variable comments added in Transaction class
+    
+    * Constructor description added in Transaction class
+    
+    * Function descriptions added in Transaction class - set and get methods for variables
+    
+    * Rectified the comment operator and the placement of comment for functions in class ExpenseTrackerView
+    
+    * Corrected the javadoc comment syntax for main() method in ExpenseTrackerApp
+    
+    * Updated the comments to Javadoc comments in Transaction class
+    
+    * Added @param and @return aspects to javadoc of constructor in Transaction class
+    
+    * Parameter and Return information added to methods of Transaction class
+    
+    * Added the param info the main method description in ExpenseTrackerApp
+    
+    * Edited the description for class variables in ExpenseTrackerView
+    
+    * Added the @param and @return description to java documentation of all methods in ExpenseTrackerView
+    
+    * Removed @return from constructors and methods with void as return type in Transaction
+    
+    * Removed @return from constructor and methods with void return type in ExpenseTrackerView
+    
+    * Updated the description for getAmountField and getCategoyField after Code Modification (dataype check and conversion to lowercase)
+    
+    * Comment when validating the inputs in ExpenseTrackerApp
+    
+    * Class and class variable description for InputValidation
+    
+    * checkAmount Javadoc in InputValidation
+    
+    * checkCategory Javadoc in InputValidation
+    
+    * combined check function Javadoc in InputValidation
+    
+    * Java documentation for alertMessageDialogue in ExpenseTrackerView
+    
+    * Added jdoc folder
+    
+    * Correction made in checkCategory javadoc in InputValidation
+
+commit fec728512e0cc56c06dcefdda1126a0c5b5f2140
+Author: Wen Hsin-Yu <48324248+xyw0025@users.noreply.github.com>
+Date:   Mon Sep 25 10:36:25 2023 -0400
+
+    [HW1] Code Modification (#1)
+    
+    * Feat: Validate amount and category's value in controller
+    
+    * Feat: amount field logic. If it's not a double than value gets switched to 0.
+    
+    * Feat: invalid input alert using OptionPane
+    
+    * Feat: Input validation logics
+    
+    * Chore: comment location and code style
+    
+    * Feat: input category name case non-sensitive
+
+commit 4aba3f306ce156c0a3995c72fae604e5c4dd4839
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Thu Sep 21 16:16:51 2023 -0400
+
+    Readme Update
+
+commit e6b5eef3e2cf2bd38bd2482b633c8f670c56b3b9
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Wed Sep 20 21:34:40 2023 -0400
+
+    Readme Update
+
+commit 8c41e8002d1ab37af47d259a2dd7f02033c69d72
+Merge: d3a5c14 34bd5aa
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Wed Sep 20 21:32:44 2023 -0400
+
+    Merge branch 'main' of https://github.com/CS520-Fall2023/hw1_baseline
+
+commit d3a5c14b35628fc5ad47068443af4e5960043c39
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Wed Sep 20 21:31:49 2023 -0400
+
+    Readme Update
+
+commit 34bd5aa0313f8c07c903f01e68ae0489f89e3d87
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Mon Sep 18 10:44:46 2023 -0400
+
+    Readme Update
+
+commit 72141cc496980da67e34cc8676331c48e912ec41
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Mon Sep 18 02:14:52 2023 -0400
+
+    HW1 file updates
+
+commit ed592ee28b697f1c2464703f0b53618bb653c017
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Mon Sep 18 02:13:24 2023 -0400
+
+    Initial commit
